@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import SearchBar from './SearchBar'
+import Beers from './components/Beers'
+import Luke from './components/Luke'
+import {BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import 'semantic-ui-react'
+import 'semantic-ui-css/semantic.min.css';
 
 class App extends Component {
 
@@ -9,22 +13,28 @@ class App extends Component {
     // /search?q=Goosinator&type=beer
     fetch(`http://api.brewerydb.com/v2/search?q=${beerName}&key=eec0feeeee89d3390e84b6b058eeb065&type=beer`)
     .then(res => res.json())
-    .then(beer => console.log(beer))
+    .then(res => {
+      console.log(res)
+      this.setState({
+        beers: res.data
+      })
+    }
+      )
     //
   }
 
-
+  componentWillMount() {
+    this.state = {
+      beers: []
+    }
+  }
 
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <div className="App-intro">
-          <SearchBar getBeer={this.getBeer}/>
-        </div>
+        <Route exact path="/" render={ () => <SearchBar getBeer={this.getBeer}/> } />
+        <Route exact path="/" render={ () => <Beers beers={this.state.beers} /> } />
+        <Route path="/luke" component={Luke} />
       </div>
     );
   }
