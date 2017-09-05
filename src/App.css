@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,500,700,900');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css');
+
 .App {
   text-align: center;
 }
@@ -21,4 +25,175 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+body {
+  font-family: 'Roboto', serif;
+}
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.search-bar {
+  animation: border 1s ease;
+  font-family: 'Roboto', serif;
+  font-weight: 200;
+  width: 125%;
+  border-bottom: solid black;
+  border-width: 0px 0px 1px 0px;
+  font-size: 56px;
+  text-align: center;
+  display: block;
+  position: relative;
+  left: -12.6%;
+  background: transparent;
+  height: 58px;
+  outline: unset;
+}
+.beer-form {
+  position: relative;
+  margin-top: -0.6%;
+}
+.beers-container {
+  left: 7%;
+  position: relative;
+  margin-top: 40px !important;
+  width: 100%;
+  font-family: 'Roboto', serif;
+  font-weight: 400;
+  display: none;
+}
+.beer-container {
+  cursor: pointer;
+  margin-right: 20px !important
+}
+.on-top {
+  position: absolute;
+}
+.almost-full-screen {
+  position: absolute;
+  height: 100%;
+  width: 90%;
+  top: 17%;
+  background-color: #607D8B;
+  left: 5%;
+}
+.navbar {
+  position: absolute;
+  top: -1%;
+  width: 95%;
+  left: 1%;
+  font-size: 22px;
+  font-family: 'Roboto', serif;
+  font-weight: 200;
+}
+.logo-on-navbar {
+  float: left;
+}
+.profile-link {
+  float: right;
+}
+ul {
+  list-style-type: none;
+}
+.get-low {
+  margin-top: 2% !important;
+  -webkit-transition: all 0.4s ease !important;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+input.massive.ui.primary.basic.button.get-low:hover {
+  background-color: #2185d0 !important;
+  color: white !important;
+}
+.fa {
+  color: #ffc107 !important;
+  padding-left: 4px !important;
+  padding-right: 4px !important;
+}
+.ui.comments {
+  left: 14% !important;
+  position: relative !important;
+}
+.ui.page.dimmer {
+  position: absolute !important;
+}
+.ui.comments>.reply.form {
+  margin-bottom: 29px !important
+}
+.main-logo {
+  font-size: 101px !important;
+  font-family: -webkit-pictograph;
+  maring-top: 7% !important;
+}
+.main-logo-container {
+  margin-top: 8% !important;
+  border: black solid 1px;
+  width: 64%;
+  margin-left: 270px;
+  height: 296px;
+  transition: all 1s ease;
+}
+
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+.example-appear {
+  opacity: 0.01;
+}
+
+.example-appear.example-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}
+.card {
+  opacity: 0;
+}
+
+@keyframes fill-right {
+    0%   {left: 30em;}
+    100% {left: 74em;}
+}
+@keyframes fill-left {
+    0%   {left: -15em;}
+    100% {left: -57em;}
+}
+@keyframes fill-all {
+    0%   {top: -15em; left: ;}
+    100% {left: -57em;}
+}
+.filler-right {
+  animation: fill-right 1s 1;
+  animation-fill-mode: forwards;
+    background-color: white;
+    height: 6px;
+    width: 70em;
+    position: absolute;
+    top: 52px;
+    z-index: 9999;
+}
+.filler-left {
+    background-color: white;
+    height: 6px;
+    width: 46em;
+    position: absolute;
+    top: 52px;
+    z-index: 9999;
+  animation: fill-left 1s 1;
+  animation-fill-mode: forwards;
 }
