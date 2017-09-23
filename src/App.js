@@ -32,7 +32,7 @@ class App extends Component {
 
   getBeer = (beerName) => {
 
-    fetch(`http://api.brewerydb.com/v2/search?q=${beerName}&key=eec0feeeee89d3390e84b6b058eeb065&type=beer`)
+    fetch(`https://api.brewerydb.com/v2/search?q=${beerName}&key=eec0feeeee89d3390e84b6b058eeb065&type=beer`, {method: 'GET', 'content-type': 'text/plain'})
     .then(res => res.json())
     .then(res => {
       console.log(res)
