@@ -25,6 +25,6 @@ run
 
 - `npm install && npm start`
 
-- The webapp will show but search will be non-functional. To enable please use Chrome and download https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?hl=en to allow for CORS. * Remember to disable the extension after using Lukes Beer as other websites -e.g., Youtube, will not work.
+- The webapp will show but search will be not be functional. To enable please use Chrome and download the extension https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?hl=en to allow for CORS. * Remember to disable the extension after using Lukes Beer as other websites -e.g., Youtube, will not work.
 
-Feedback truly appreciated.
+Thanks for stopping by!
