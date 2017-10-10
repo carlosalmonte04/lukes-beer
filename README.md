@@ -26,6 +26,8 @@ run
 2. Using dotenv to hide API key.
 3. Using a workaround to override CORS.
 
+
+## Notes
 This project intends to showcase abilities of state management and lifecycle components.
 
 I was mostly involved in the frontend aspect (UI/UX) using Semantic and the Gsap library to enable transitions.
